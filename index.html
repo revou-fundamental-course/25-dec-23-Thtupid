@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematika</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header / Navbar -->
+    <header id="navbar">
+      <a href="index.html" id="logo"
+        ><img src="assets/logo.png" alt="" class="logo" />KATIK</a
+      >
+      <nav class="navigation">
+        <ul class="nav-link">
+          <li class="link"><a href="#" id="link1">Keliling Segitiga</a></li>
+          <li class="link"><a href="#" id="link2">Luas Segitiga</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Of Header / Footer  -->
+
+    <!-- Start Main Content -->
+    <main class="main-input">
+      <fieldset class="bagian-judul">
+        <h4 class="judul">Kalkulator Matematik</h4>
+        <p class="sub-judul">
+          Katik atau Kalkulator Matematik adalah web yang digunakan untuk
+          menghitung luas serta keliling segitiga
+        </p>
+      </fieldset>
+      <h3 class="KS">Keliling Segitiga</h3>
+
+      <img
+        src="assets/Rumus Keliling Segitiga.png"
+        alt="Rumus keliling"
+        class="gambar-keliling"
+      />
+      <fieldset>
+        <legend class="untuk-keliling">Rumus keliling segitiga</legend>
+        <p class="kell">
+          Berikut adalah rumus untuk menghitung keliling segitiga:
+        </p>
+        <p class="rumus-keliling">K = sisi + sisi + sisi</p>
+        <p class="keterangan-keliling">
+          Keterangan: <br />
+          K = Keliling segitiga <br />
+        </p>
+      </fieldset>
+
+      <h3 class="nilai-input-keliling">
+        Input nilai untuk menghitung keliling segitiga
+      </h3>
+      <label for="input-sisi" id="label-keliling"
+        >Input sisi ke 1 Segitiga</label
+      >
+
+      <input
+        type="number"
+        id="input-sisi-satu"
+        class="input-sisi"
+        placeholder="Nilai sisi ke 1"
+      />
+      <label for="input-sisi" id="label-keliling"
+        >Input sisi ke 2 Segitiga</label
+      >
+      <input
+        type="number"
+        id="input-sisi-dua"
+        class="input-sisi"
+        placeholder="Nilai sisi ke 2"
+      />
+      <label for="input-sisi" id="label-keliling"
+        >Input sisi ke 3 Segitiga</label
+      >
+      <input
+        type="number"
+        id="input-sisi-tiga"
+        class="input-sisi"
+        placeholder="Nilai sisi ke 3"
+      />
+      <label for="hasil-keliling" id="hasil-keliling">Hasil keliling</label>
+      <input
+        id="hasil-dari-keliling"
+        class="hasil-dari-keliling"
+        placeholder="Hasil perhitungan keliling"
+        disabled
+      />
+
+      <p id="output-keliling"></p>
+
+      <div class="button-keliling">
+        <button class="hitung-keliling">Hitung</button>
+        <button class="reset-keliling">Reset</button>
+      </div>
+
+      <!-- Awal Luas Segitiga -->
+      <h3 class="LS">Luas Segitiga</h3>
+      <img
+        src="assets/Rumus Luas Segitiga.png"
+        alt="Rumus Luas"
+        class="gambar-luas"
+      />
+      <fieldset>
+        <legend class="untuk-luas">Rumus luas segitiga</legend>
+        <p>Ini adalah rumus menghitung Luas Segitiga</p>
+
+        <p class="rumus-luas">L = (a * t) / 2</p>
+        <p class="keterangan-luas">
+          Keterangan: 
+          <p class="ket-luas">L = Luas segitiga</p>  
+          <p class="ket-alas">a = alas segitiga </p>
+          <p class="ket-tinggi">t = tinggi segitiga</p>
+        </p>
+      </fieldset>
+
+      <h3 class="input-luas">Input nilai untuk menghitung luas segitiga</h3>
+      <label for="input-alas" id="label-alas">Input Alas Segitiga</label>
+      <input
+        type="number"
+        id="input-alas"
+        class="input-alas-segitiga"
+        placeholder="Nilai Alas Segitiga"
+      />
+      <label for="input-tinggi" id="label-tinggi">Input Tinggi Segitiga</label>
+      <input
+        type="number"
+        id="input-tinggi"
+        class="input-tinggi-segitiga"
+        placeholder="Nilai Tinggi Segitiga"
+      />
+      <label for="hasil-luas" id="hasil-luas">Hasil luas</label>
+      <input
+        id="hasil-dari-luas"
+        class="hasil-dari-luas"
+        placeholder="Hasil perhitungan luas"
+        disabled
+      />
+      <p id="output-luas"></p>
+
+      <div class="button">
+        <button class="hitung-luas">Hitung</button>
+        <button class="reset-luas">Reset</button>
+      </div>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Start Footer -->
+
+    <footer>
+      <div class="footer-akhir">
+        <a href="index.html" class="copyright"
+          >Copyright © 2024 Raihan Firdaus Helmy . All Rights Reserved.</a
+        >
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
